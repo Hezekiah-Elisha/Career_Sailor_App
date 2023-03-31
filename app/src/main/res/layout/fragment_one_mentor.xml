@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.OneMentorFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtOneMentorName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="4dp"
+            android:gravity="center_horizontal"
+            android:text="Name"
+            android:textAlignment="center"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/txtMentorLocation"
+            app:layout_constraintEnd_toEndOf="@+id/txtMentorLocation" />
+
+        <TextView
+            android:id="@+id/txtMentorBio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="175dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="175dp"
+            android:fontFamily="@font/lexend_extralight"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtOneMentorName" />
+
+        <TextView
+            android:id="@+id/txtMentorField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/txtField"
+            app:layout_constraintStart_toStartOf="@+id/txtMentorLocation"
+            app:layout_constraintTop_toTopOf="@+id/txtField" />
+
+        <TextView
+            android:id="@+id/txtMentorLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="33dp"
+            android:text="TextView"
+            app:layout_constraintBottom_toBottomOf="@+id/txtLocation"
+            app:layout_constraintEnd_toEndOf="@+id/menImage"
+            app:layout_constraintTop_toTopOf="@+id/txtLocation" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabMentor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="54dp"
+            android:clickable="true"
+            android:src="@drawable/baseline_person_add_alt_1_24"
+            android:tooltipText="Add Mentor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <ImageView
+            android:id="@+id/menImage"
+            android:layout_width="216dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="17dp"
+            android:layout_marginBottom="14dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintBottom_toTopOf="@+id/txtOneMentorName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="304dp"
+            android:layout_marginEnd="8dp"
+            android:text="Location"
+            app:layout_constraintEnd_toStartOf="@+id/txtOneMentorName"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtField"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:text="Field"
+            app:layout_constraintStart_toStartOf="@+id/txtLocation"
+            app:layout_constraintTop_toBottomOf="@+id/txtLocation" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="interest">
+        <item>engineering</item>
+        <item>education</item>
+        <item>psychology</item>
+        <item>technology</item>
+    </array>
+    <array name="skills">
+        <item>architecture</item>
+        <item>teaching</item>
+        <item>counseling</item>
+        <item>coding</item>
+    </array>
+    <array name="experience">
+        <item></item>
+        <item>2</item>
+        <item>3</item>
+    </array>
+</resources>

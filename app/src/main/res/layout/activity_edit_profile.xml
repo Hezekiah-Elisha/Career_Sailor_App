@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:padding="20dp"
+tools:context=".view.EditProfileActivity">
+
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/pp" />
+
+    <Button
+        android:id="@+id/btnProfilePicture"
+        style="@style/Widget.Material3.Button.ElevatedButton.Icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Add Profile Picture"
+        app:icon="@drawable/baseline_camera_alt_24"
+        tools:layout_editor_absoluteX="209dp"
+        tools:layout_editor_absoluteY="595dp" />
+
+
+    <TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="2">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/skills"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:hint="Skills">
+
+            <AutoCompleteTextView
+                android:id="@+id/txtSkills"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                app:simpleItems="@array/skills" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/interests"
+            style="@style/Widget.Material3.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="3dp"
+            android:hint="Interests">
+
+            <AutoCompleteTextView
+                android:id="@+id/txtInterests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                app:simpleItems="@array/interest" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </TableRow>
+</TableLayout>
+
+
+<com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/txtExperienceLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:startIconDrawable="@drawable/baseline_edit_road_24"
+    app:startIconContentDescription="Email"
+    app:endIconMode="clear_text"
+    app:helperTextEnabled="true"
+    app:helperText="Years of experience"
+    android:hint="Experience">
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/txtExperienceYears"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        />
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:text="Update" />
+
+<ProgressBar
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:id="@+id/progressBar"
+    android:visibility="gone"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

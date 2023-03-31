@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.careersailorapp.view.HomeFragment"
+        android:label="Career Sailor"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/articlesFragment"
+        android:name="com.example.careersailorapp.view.ArticlesFragment"
+        android:label="Articles"
+        tools:layout="@layout/fragment_articles">
+        <action
+            android:id="@+id/action_articlesFragment_to_oneArticleFragment"
+            app:destination="@id/oneArticleFragment" />
+        <argument
+            android:name="the_link"
+            android:defaultValue="https://google.com"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/jobsFragment"
+        android:name="com.example.careersailorapp.view.JobsFragment"
+        android:label="Jobs"
+        tools:layout="@layout/fragment_jobs" />
+    <fragment
+        android:id="@+id/mentorFragment"
+        android:name="com.example.careersailorapp.view.MentorFragment"
+        android:label="Find A mentor"
+        tools:layout="@layout/fragment_mentor" >
+        <action
+            android:id="@+id/action_mentorFragment_to_oneMentorFragment"
+            app:destination="@id/oneMentorFragment" />
+        <argument android:name="the_mentor" />
+    </fragment>
+    <fragment
+        android:id="@+id/oneArticleFragment"
+        android:name="com.example.careersailorapp.view.OneArticleFragment"
+        android:label="Article"
+        tools:layout="@layout/fragment_one_article" />
+    <fragment
+        android:id="@+id/oneMentorFragment"
+        android:name="com.example.careersailorapp.view.OneMentorFragment"
+        android:label="Mentor"
+        tools:layout="@layout/fragment_one_mentor">
+    </fragment>
+</navigation>

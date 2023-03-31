@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/AppTheme"
+    tools:context=".view.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/materialToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="246dp"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="59dp"
+            android:text="User Name"
+            android:textSize="22dp"
+            android:fontFamily="@font/lexend_extralight"
+            android:textColor="@color/md_theme_light_onPrimary"
+            app:layout_constraintBottom_toBottomOf="@+id/materialToolbar"
+            app:layout_constraintEnd_toEndOf="@+id/userImage"
+            app:layout_constraintStart_toStartOf="@+id/userImage" />
+
+        <ImageView
+            android:id="@+id/userImage"
+            android:layout_width="126dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="19dp"
+            android:src="@drawable/baseline_person_24"
+            app:layout_constraintBottom_toTopOf="@+id/txtUserName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtFieldHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Hello"
+            android:fontFamily="@font/lexend_extralight"
+            android:textColor="@color/md_theme_light_onPrimary"
+            app:layout_constraintEnd_toEndOf="@+id/txtUserName"
+            app:layout_constraintStart_toStartOf="@+id/txtUserName"
+            app:layout_constraintTop_toBottomOf="@+id/txtUserName" />
+
+        <Button
+            android:id="@+id/btnProfile"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="30dp"
+            android:text="Profile"
+            android:fontFamily="@font/lexend_extralight"
+            app:icon="@drawable/baseline_person_24"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialToolbar" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            style="@style/Widget.Material3.Button.ElevatedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="42dp"
+            android:fontFamily="@font/lexend_extralight"
+            android:text="logout"
+            app:icon="@drawable/baseline_logout_24"
+            app:layout_constraintBottom_toBottomOf="@+id/btnProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnProfile"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardMentor"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="10dp"
+            app:strokeWidth="0dp"
+            app:cardElevation="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.965">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/mentNameTxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:fontFamily="@font/lexend_extralight"
+                    android:text="TextView"
+                    android:textSize="20dp"
+                    app:layout_constraintStart_toStartOf="@+id/mentLocation"
+                    app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+                <ImageView
+                    android:id="@+id/imgMent"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/mentLocation"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@tools:sample/avatars" />
+
+                <TextView
+                    android:id="@+id/mentLocation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="19dp"
+                    android:layout_marginEnd="194dp"
+                    android:fontFamily="@font/lexend_extralight"
+                    android:text="TextView"
+                    app:layout_constraintEnd_toStartOf="@+id/imgMent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/mentNameTxt" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="23dp"
+                    android:fontFamily="@font/lexend_extralight"
+                    android:text="Your mentor"
+                    android:textFontWeight="@integer/material_motion_duration_long_1"
+                    android:textSize="26dp"
+                    app:layout_constraintStart_toStartOf="@+id/mentNameTxt"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

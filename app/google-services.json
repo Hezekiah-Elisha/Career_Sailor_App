@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "807192841158",
+    "project_id": "career-sailor",
+    "storage_bucket": "career-sailor.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807192841158:android:f5076134dad57ba12c80c7",
+        "android_client_info": {
+          "package_name": "com.example.careersailor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807192841158-3k9auhpig91n9q30oj3c6tpa804dh2ut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.careersailor",
+            "certificate_hash": "358db8008c205d0047cbac181feb4a9265426d20"
+          }
+        },
+        {
+          "client_id": "807192841158-cc12ltlh4i9fpne3fhtnttv2o72js46m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfsgOHOGlr1WW6BOPTaoONOxPP3mAs39c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807192841158-cc12ltlh4i9fpne3fhtnttv2o72js46m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:807192841158:android:e7de5bda5b9c8e972c80c7",
+        "android_client_info": {
+          "package_name": "com.example.careersailorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "807192841158-cc12ltlh4i9fpne3fhtnttv2o72js46m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCfsgOHOGlr1WW6BOPTaoONOxPP3mAs39c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "807192841158-cc12ltlh4i9fpne3fhtnttv2o72js46m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
